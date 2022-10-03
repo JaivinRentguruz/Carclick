@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <LinearLayout
     android:orientation="horizontal"
@@ -30,7 +30,7 @@
         android:layout_width="0dp"
         android:layout_weight="65"
         android:layout_height="match_parent"
-        android:text="Snow Brush"
+        android:text=""
         android:textColor="@color/txtBlack"
         android:textSize="@dimen/_11ssp"
         android:theme="@style/texttheme" />

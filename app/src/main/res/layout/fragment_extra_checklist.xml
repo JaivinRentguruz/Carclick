@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -64,17 +64,17 @@
                         android:layout_height="1dp"
                         android:background="@color/linne" />
 
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:weightSum="2">
+                        android:orientation="vertical">
 
-                        <androidx.core.widget.NestedScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="0.5"
-                            android:background="@drawable/curve_box">
+
                     <RelativeLayout
                         android:id="@+id/equipment"
                         android:layout_width="match_parent"
@@ -85,30 +85,55 @@
                         <!-- <include layout="@layout/list_check_equipment"/>-->
 
                     </RelativeLayout>
-                        </androidx.core.widget.NestedScrollView>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/linne" />
 
-                        <androidx.core.widget.NestedScrollView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1.5"
-                            android:background="@drawable/curve_box">
+                            android:layout_height="match_parent"
+                            android:background="@drawable/curve_box"
+                            android:backgroundTint="@{Color.parseColor(UiColor.additionalcolor)}"
+                            android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="@dimen/startmargin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Check List"
+                                android:textSize="@dimen/fab_margin"
+                                android:theme="@style/texttheme" />
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/linne" />
+
+
                     <RelativeLayout
                         android:id="@+id/extrachecklist"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
                         android:layout_marginVertical="@dimen/_4sdp"
                         android:layout_marginHorizontal="@dimen/startmargin">
 
                         <!-- <include layout="@layout/chk_header"/>-->
 
                     </RelativeLayout>
-                        </androidx.core.widget.NestedScrollView>
+                        </LinearLayout>
+
                     </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
                 </LinearLayout>
 
             </LinearLayout>

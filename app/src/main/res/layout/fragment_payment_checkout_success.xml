@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
     android:background="@color/selected_dot">
 
     <RelativeLayout
@@ -32,9 +44,8 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="15dp"
                         android:text="Payment Success"
-
+                        android:textColor="@{Color.parseColor(UiColor.primary)}"
                         android:textAllCaps="false"
-                        android:textColor="@color/topcolor"
                         android:textSize="17dp"
                         android:theme="@style/texttheme" />
 
@@ -119,7 +130,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/rectangle_darkcurve_blue"
-                    android:backgroundTint="@color/black"
+                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
@@ -132,7 +143,7 @@
 
                         android:padding="2dp"
                         android:text="Amount\nPaid"
-                        android:textColor="@color/themebackgroundtext"
+                        android:textColor="@{Color.parseColor(UiColor.secondary)}"
                         android:textSize="@dimen/heading1_font_size"
                         android:theme="@style/texttheme" />
 
@@ -150,7 +161,7 @@
                             android:padding="5dp"
                             android:text="Amount"
 
-                            android:textColor="@color/themebackgroundtext"
+                            android:textColor="@{Color.parseColor(UiColor.secondary)}"
                             android:textSize="36dp"
                             android:theme="@style/texttheme" />
                     </LinearLayout>
@@ -164,10 +175,12 @@
             android:layout_height="@dimen/bottommenuheight"
             android:layout_alignParentBottom="true"
             android:background="@color/bottommenucolor"
+            android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txtprocess"
+                android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
                 style="@style/fullbtn"
                 android:text="Finish"/>
 
@@ -188,3 +201,4 @@
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

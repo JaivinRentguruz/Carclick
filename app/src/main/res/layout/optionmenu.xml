@@ -8,9 +8,9 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
-<RelativeLayout
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/_5sdp"
@@ -68,11 +68,12 @@
             android:gravity="center_vertical|center_horizontal"
             android:paddingVertical="@dimen/_3sdp"
             android:text="Process Payment"
-            android:textColor="@{Color.parseColor(UiColor.secondary)}"
+            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
             android:textSize="@dimen/_14ssp"
             android:theme="@style/texttheme" />
 
         <View
+            android:id="@+id/paymentprocessline"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/textColorHint" />
@@ -84,11 +85,12 @@
             android:gravity="center_vertical|center_horizontal"
             android:paddingVertical="@dimen/_3sdp"
             android:text="Delete Agreement"
-            android:textColor="@{Color.parseColor(UiColor.secondary)}"
+            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
             android:textSize="@dimen/_14ssp"
             android:theme="@style/texttheme" />
 
         <View
+            android:id="@+id/deleteagreementline"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/textColorHint" />
@@ -100,11 +102,12 @@
             android:gravity="center_vertical|center_horizontal"
             android:paddingVertical="@dimen/_3sdp"
             android:text="Edit Agreement"
-            android:textColor="@{Color.parseColor(UiColor.secondary)}"
+            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
             android:textSize="@dimen/_14ssp"
             android:theme="@style/texttheme" />
 
         <View
+            android:id="@+id/editAgreementline"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/textColorHint" />
@@ -117,31 +120,31 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="Ready for Check Out"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
             <View
+                android:id="@+id/readycheckoutline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
 
             <TextView
                 android:id="@+id/readyconfirm"
-                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/optionmenuheight"
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="Confirm Now"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
-       <!--     <View
-                android:visibility="gone"
+            <View
+                android:id="@+id/readyconfirmline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/textColorHint" />-->
+                android:background="@color/textColorHint" />
 
         <TextView
             android:id="@+id/checkout"
@@ -150,14 +153,66 @@
             android:gravity="center_vertical|center_horizontal"
             android:paddingVertical="@dimen/_3sdp"
             android:text="Check Out"
-            android:textColor="@{Color.parseColor(UiColor.secondary)}"
+            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
             android:textSize="@dimen/_14ssp"
             android:theme="@style/texttheme" />
 
         <View
+            android:id="@+id/checkoutline"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/textColorHint" />
+
+            <TextView
+                android:id="@+id/checkIn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/optionmenuheight"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingVertical="@dimen/_3sdp"
+                android:text="Check In"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
+                android:textSize="@dimen/_14ssp"
+                android:theme="@style/texttheme" />
+
+            <View
+                android:id="@+id/checkInline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorHint" />
+
+            <TextView
+                android:id="@+id/checkoutsummry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/optionmenuheight"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingVertical="@dimen/_3sdp"
+                android:text="Check Out Summarry"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
+                android:textSize="@dimen/_14ssp"
+                android:theme="@style/texttheme" />
+
+            <View
+                android:id="@+id/checkoutsummryline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorHint" />
+
+            <TextView
+                android:id="@+id/checkinsummarry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/optionmenuheight"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingVertical="@dimen/_3sdp"
+                android:text="Check In Summarry"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
+                android:textSize="@dimen/_14ssp"
+                android:theme="@style/texttheme" />
+
+            <View
+                android:id="@+id/checkinsummarryline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColorHint" />
 
         <TextView
             android:id="@+id/printAgreement"
@@ -166,11 +221,12 @@
             android:gravity="center_vertical|center_horizontal"
             android:paddingVertical="@dimen/_3sdp"
             android:text="Print Agreement"
-            android:textColor="@{Color.parseColor(UiColor.secondary)}"
+            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
             android:textSize="@dimen/_14ssp"
             android:theme="@style/texttheme" />
 
         <View
+            android:id="@+id/printAgreementline"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/textColorHint" />
@@ -182,11 +238,12 @@
             android:gravity="center_vertical|center_horizontal"
             android:paddingVertical="@dimen/_3sdp"
             android:text="Email Agreement"
-            android:textColor="@{Color.parseColor(UiColor.secondary)}"
+            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
             android:textSize="@dimen/_14ssp"
             android:theme="@style/texttheme" />
 
             <View
+                android:id="@+id/email_agreementline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
@@ -198,11 +255,12 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/change_dates"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
             <View
+                android:id="@+id/changedateline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
@@ -214,11 +272,12 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/change_vehicle"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
             <View
+                android:id="@+id/changevehicleline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
@@ -230,12 +289,13 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/extend_agreement"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
 
             <View
+                android:id="@+id/extendagreementline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
@@ -247,11 +307,12 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/tall_charges"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
             <View
+                android:id="@+id/tollchargeline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
@@ -263,11 +324,12 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/traffic_tick"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
             <View
+                android:id="@+id/traffic_ticline"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/textColorHint" />
@@ -279,7 +341,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="Cancel Reservation"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -299,7 +361,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/print_confirmation"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -314,7 +376,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/print_receipt"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -330,7 +392,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/email_confirmation"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -345,7 +407,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/email_receipt"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -360,7 +422,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/change_dates"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -375,7 +437,7 @@
                 android:gravity="center_vertical|center_horizontal"
                 android:paddingVertical="@dimen/_3sdp"
                 android:text="@string/change_vehicle"
-                android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="@dimen/_14ssp"
                 android:theme="@style/texttheme" />
 
@@ -402,5 +464,5 @@
         android:textSize="@dimen/_14ssp"
         android:textStyle="bold"
         android:theme="@style/texttheme" />
-</RelativeLayout>
+</LinearLayout>
 </layout>

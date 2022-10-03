@@ -11,7 +11,8 @@
     <color name="yellow">#de3822</color>
     <color name="MGrey">#000000</color>
     <!--<color name="red">#FD0610</color>-->
-    <color name="testing">#84E846</color>
+    <!--<color name="testing">#84E846</color>-->
+    <color name="testing">@color/red</color>
     <color name="red">@color/green</color>
     <color name="lightgreen">@color/lightred</color>
     <color name="lightgreen2">#DC143C</color><!--<color name="lightgreen2">#E91E63</color>-->
@@ -40,7 +41,8 @@
 
 
     <color name="onBoardingScreen1bg">#00ABFF</color>
-    <color name="onBoardingScreen2bg">#91C722</color>
+    <!--<color name="onBoardingScreen2bg">#91C722</color>-->
+    <color name="onBoardingScreen2bg">@color/red</color>
     <color name="onBoardingScreen3bg">#FFC100</color>
 
     <color name="TitleTextColor">#FFFFFF</color>
@@ -65,7 +67,8 @@
     <color name="curvebox_bg_color">#D5D4D4</color>
 
     <color name="progressbar">@color/red</color>
-    <color name="bottomIcon">#5dac23</color>
+    <!--<color name="bottomIcon">#5dac23</color>-->
+    <color name="bottomIcon">@color/red</color>
     <color name="bottomIcon2">#e7b313</color>
 
     <color name="test">@color/white</color>
@@ -191,6 +194,9 @@
     <color name="sdfsfs" format="color"></color>
 
     <color name="theme_color_blue">#ff0071d3</color>
+
+    <color name="sdate">#68737A</color>
+    <color name="ldate">#A8A8A8</color>
 
 <!--    <color name="colorPrimary">#5DAC23</color>
     <color name="colorPrimaryDark">#0B1B2D</color>

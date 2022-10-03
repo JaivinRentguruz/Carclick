@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:textColor="@color/topcolor"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"
                     android:text="License Details" />
 
             </LinearLayout>

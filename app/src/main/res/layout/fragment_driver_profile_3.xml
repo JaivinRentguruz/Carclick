@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -68,25 +68,25 @@
 
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="6dp"
+                android:layout_width="@dimen/c_line_width"
+                android:layout_height="@dimen/c_line_height"
                 android:layout_marginLeft="15dp"
                 android:src="@drawable/progress_rectangle_default"/>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="6dp"
+                android:layout_width="@dimen/c_line_width"
+                android:layout_height="@dimen/c_line_height"
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/progress_rectangle_default"/>
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="6dp"
+                android:layout_width="@dimen/c_line_width"
+                android:layout_height="@dimen/c_line_height"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/progress_rectangle_selected"
                 android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="6dp"
+                android:layout_width="@dimen/c_line_width"
+                android:layout_height="@dimen/c_line_height"
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/progress_rectangle_default"/>
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:text="Create Your Password"
-                android:textColor="@color/topcolor"
+                android:textColor="@{Color.parseColor(UiColor.primary)}"
                 style="@style/titletext" />
         </LinearLayout>
     </LinearLayout>

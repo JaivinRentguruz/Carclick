@@ -596,6 +596,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Self checkout is available 24 hours prior tothe checkout time. We will notify you as soon the self checkout is available.  "
+                            android:maxLines="3"
                             android:layout_alignParentBottom="true"
                             android:textColor="@color/regtcolor"
                             android:textSize="13dp"

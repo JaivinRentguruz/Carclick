@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RentGuruz</string>
+    <string name="app_name">Car Click</string>
 
     <string name="title_activity_splash_screen">@string/app_name</string>
     <string name="dummy_button">Dummy Button</string>
@@ -159,7 +159,13 @@
         <item>Traffic Fine</item>
         <item>Toll Charge</item>
     </string-array>
-    <string name="membershipplandesc">Standard Base Rate, includes unlimited miles. Basic Insurance  included in this price with zero down and 2000$. Standard  Base Rate, includes unlimited miles. </string>
+    <!--<string name="membershipplandesc">Standard Base Rate, includes unlimited miles. Basic Insurance  included in this price with zero down and 2000$. Standard  Base Rate, includes unlimited miles. </string>-->
+    <string name="membershipplandesc">Standard Base Rate, includes unlimited miles. Basic Insurance
+included in this price with zero down and 2000$. Standard
+Base Rate, includes unlimited miles. Standard Base Rate, includes unlimited miles. Basic Insurance included in this price with zero down and 2000$. Standard
+Base Rate, includes unlimited miles. Standard Base Rate, includes unlimited miles. Basic Insurance
+included in this price with zero down and 2000$. Standard
+Base Rate, includes unlimited miles.  </string>
     <string name="SpecialInstructor">This is a special instructions to the driver. This is a special instructions \n to the driver. This is a special instructions
         to \n the driver. This is a special instructions to the driver. \n This is a special instructions to the driver. This is a special \n instructions to the
         driver. This is a special instructions to \n the driver. This is a special instructions to the driver. This \n is a special instructions to the driver.
@@ -201,6 +207,7 @@
     <string name="amount">Amount</string>
     <string name="creditcard">Credit Card</string>
     <string name="create_your_profile">Create Your Profile</string>
+    <string name="commingsoon">( Comming Soon )</string>
 
     <string name="basic_details">Basic Details</string>
     <string name="please_enter_vin_number">Please Enter VIN Number</string>

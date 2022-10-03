@@ -6,7 +6,7 @@
     android:viewportHeight="58">
 
     <path
-        android:strokeColor="@color/MGrey"
+        android:name="one"
         android:fillColor="@color/MGrey"
         android:pathData="M9 2L100 2L100 46L59.5 46L51.5 53L43.5 46L3 46L3 2Z"/>
 

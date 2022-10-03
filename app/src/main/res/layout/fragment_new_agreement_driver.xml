@@ -8,7 +8,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,6 +86,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
+                    android:visibility="gone"
                     android:orientation="horizontal"
                     android:weightSum="15">
 

@@ -7,11 +7,11 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
         <variable
             name="label"
-            type="com.rentguruz.app.model.response.CompanyLabel" />
+            type="com.rentguruz.app.b2b.carclick.model.response.CompanyLabel" />
     </data>
 
 <RelativeLayout
@@ -23,7 +23,7 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:background="@color/backgroundColor"
-        android:backgroundTint="@{Color.parseColor(UiColor.secondary)}">
+       android:backgroundTint="@{Color.parseColor(UiColor.secondary)}">
 
        <LinearLayout
            android:layout_width="match_parent"
@@ -39,23 +39,21 @@
            <androidx.core.widget.NestedScrollView
                android:layout_width="match_parent"
                android:layout_height="match_parent"
-               android:layout_above="@+id/process"
+               android:fillViewport="true"
                android:background="@drawable/curve_box_light_green_bg"
                android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
-               android:paddingTop="@dimen/_14sdp">
+               android:paddingTop="@dimen/_10sdp">
+
 
                <LinearLayout
                    android:layout_width="match_parent"
-                   android:layout_height="0dp"
-                   android:layout_weight="100"
-                   android:weightSum="100"
+                   android:layout_height="wrap_content"
                    android:orientation="vertical">
 
                    <LinearLayout
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
-                       android:orientation="vertical"
-                       android:weightSum="100">
+                       android:orientation="vertical">
 
                        <include
                            android:id="@+id/carimage"
@@ -257,11 +255,10 @@
                            android:background="@drawable/top_curve_box1"
                            android:backgroundTint="@{Color.parseColor(UiColor.AddtionalSecondColour)}"
                            android:id="@+id/accessories_layout"
-                           android:layout_marginTop="@dimen/_minus15sdp"
+                           android:layout_marginTop="@dimen/_minus20sdp"
                            android:paddingTop="@dimen/_10sdp"
-                           android:paddingBottom="@dimen/_30sdp"
                            android:layout_weight="1"
-                           android:layout_height="match_parent">
+                           android:layout_height="wrap_content">
 
                            <LinearLayout
                                android:layout_width="match_parent"
@@ -750,6 +747,242 @@
 
                            </LinearLayout>
 
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:orientation="vertical"
+                               android:background="@drawable/top_curve_box1"
+                               android:backgroundTint="@{Color.parseColor(UiColor.additionalcolor)}"
+                               android:layout_marginTop="@dimen/_10sdp"
+                               android:paddingBottom="@dimen/_18sdp"
+                               android:paddingTop="@dimen/_10sdp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/rf"
+                                   android:theme="@style/texttheme"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="10dp"
+                                   android:text="Rates Features"
+                                   android:textAllCaps="true"
+                                   android:textSize="@dimen/_18ssp" />
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:layout_marginTop="@dimen/_10sdp">
+
+
+                                   <TextView  android:theme="@style/texttheme"
+                                       android:layout_width="70dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                                       android:text=" Time "
+                                       android:gravity="center"
+                                       android:paddingHorizontal="15dp"
+                                       android:paddingVertical="4dp"
+                                       android:textSize="15dp"
+                                       android:textColor="@color/themebackgroundtext"
+                                       android:layout_marginStart="10dp"/>
+
+
+                                   <TextView
+                                       android:theme="@style/texttheme"
+                                       android:id="@+id/graceminute"
+                                       android:layout_width="80dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:text="999"
+                                       android:gravity="end"
+                                       android:layout_gravity="center"
+                                       android:textSize="15dp"
+                                       android:paddingStart="10dp"
+                                       android:layout_marginStart="-5dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:paddingVertical="4dp"
+                                       android:textColor="@color/background"
+                                       android:singleLine="true"/>
+
+
+                                   <TextView  android:theme="@style/texttheme"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:layout_marginStart="1dp"
+                                       android:text="Grace Minutes"
+                                       android:gravity="center_vertical"
+                                       android:textSize="@dimen/sixteen" />
+
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:layout_marginTop="10dp">
+
+
+                                   <TextView
+                                       android:id="@+id/currency5"
+                                       android:theme="@style/texttheme"
+                                       android:layout_width="70dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                                       android:text="USD $"
+                                       android:gravity="end"
+                                       android:singleLine="true"
+                                       android:textColor="@color/themebackgroundtext"
+                                       android:paddingHorizontal="15dp"
+                                       android:paddingVertical="4dp"
+                                       android:textSize="15dp"
+                                       android:layout_marginStart="10dp"/>
+
+
+                                   <TextView
+                                       android:theme="@style/texttheme"
+                                       android:id="@+id/extramileagecharge"
+                                       android:layout_width="80dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:text="999"
+                                       android:gravity="end"
+                                       android:layout_gravity="center"
+                                       android:textSize="15dp"
+                                       android:paddingStart="10dp"
+                                       android:layout_marginStart="-5dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:paddingVertical="4dp"
+                                       android:textColor="@color/background"
+                                       android:singleLine="true"/>
+
+
+                                   <TextView
+                                       android:id="@+id/emc"
+                                       android:theme="@style/texttheme"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginStart="1dp"
+                                       android:text="Extra Mileage Charge"
+                                       android:gravity="center_vertical"
+                                       android:textSize="@dimen/sixteen"/>
+
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:layout_marginTop="10dp">
+
+
+                                   <TextView
+                                       android:id="@+id/currency6"
+                                       android:theme="@style/texttheme"
+                                       android:layout_width="70dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                                       android:text="USD $"
+                                       android:gravity="end"
+                                       android:singleLine="true"
+                                       android:textColor="@color/themebackgroundtext"
+                                       android:paddingHorizontal="15dp"
+                                       android:paddingVertical="4dp"
+                                       android:textSize="15dp"
+                                       android:layout_marginStart="10dp"/>
+
+
+                                   <TextView
+                                       android:theme="@style/texttheme"
+                                       android:id="@+id/extrafuelcharge"
+                                       android:layout_width="80dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:text="999"
+                                       android:gravity="end"
+                                       android:layout_gravity="center"
+                                       android:textSize="15dp"
+                                       android:paddingStart="10dp"
+                                       android:layout_marginStart="-5dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:paddingVertical="4dp"
+                                       android:textColor="@color/background"
+                                       android:singleLine="true"/>
+
+
+                                   <TextView  android:theme="@style/texttheme"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginStart="1dp"
+                                       android:text="Extra Fuel / Gas Charge"
+                                       android:gravity="center_vertical"
+                                       android:textSize="@dimen/sixteen" />
+
+                               </LinearLayout>
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="horizontal"
+                                   android:layout_marginTop="10dp">
+
+
+                                   <TextView
+                                       android:id="@+id/currency7"
+                                       android:theme="@style/texttheme"
+                                       android:layout_width="70dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                                       android:text="US $"
+                                       android:singleLine="true"
+                                       android:textColor="@color/themebackgroundtext"
+                                       android:gravity="end"
+                                       android:paddingHorizontal="15dp"
+                                       android:paddingVertical="4dp"
+                                       android:textSize="15dp"
+                                       android:layout_marginStart="10dp"/>
+
+
+                                   <TextView
+                                       android:theme="@style/texttheme"
+                                       android:id="@+id/deposit"
+                                       android:layout_width="80dp"
+                                       android:layout_height="wrap_content"
+                                       android:background="@drawable/curve_white2"
+                                       android:text="99999"
+                                       android:gravity="end"
+                                       android:layout_gravity="center"
+                                       android:textSize="15dp"
+                                       android:paddingStart="10dp"
+                                       android:layout_marginStart="-5dp"
+                                       android:layout_marginEnd="10dp"
+                                       android:paddingHorizontal="6dp"
+                                       android:paddingVertical="4dp"
+                                       android:textColor="@color/background"
+                                       android:singleLine="true"/>
+
+
+                                   <TextView
+                                       android:id="@+id/rd"
+                                       android:theme="@style/texttheme"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:layout_marginStart="1dp"
+                                       android:text="Refundable Deposit"
+                                       android:gravity="center_vertical"
+                                       android:textSize="@dimen/sixteen" />
+
+                               </LinearLayout>
+                           </LinearLayout>
+
                           <!-- <LinearLayout
                                android:layout_width="match_parent"
                                android:layout_height="match_parent"
@@ -937,242 +1170,11 @@
                            </LinearLayout>-->
                        </LinearLayout>
 
-                       <LinearLayout
-                           android:layout_width="match_parent"
-                           android:orientation="vertical"
-                           android:background="@drawable/top_curve_box1"
-                           android:backgroundTint="@{Color.parseColor(UiColor.additionalcolor)}"
-                           android:layout_marginTop="@dimen/_minus17sdp"
-                           android:paddingTop="@dimen/_10sdp"
-                           android:paddingBottom="@dimen/_45sdp"
-                           android:layout_weight="1"
-                           android:layout_height="match_parent">
-
-                           <TextView
-                               android:id="@+id/rf"
-                               android:theme="@style/texttheme"
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:layout_marginStart="10dp"
-                               android:text="Rates Features"
-                               android:textAllCaps="true"
-                               android:textSize="@dimen/_18ssp" />
-
-                           <LinearLayout
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:orientation="horizontal"
-                               android:layout_marginTop="@dimen/_10sdp">
 
 
-                               <TextView  android:theme="@style/texttheme"
-                                   android:layout_width="70dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
-                                   android:text=" Time "
-                                   android:gravity="center"
-                                   android:paddingHorizontal="15dp"
-                                   android:paddingVertical="4dp"
-                                   android:textSize="15dp"
-                                   android:textColor="@color/themebackgroundtext"
-                                   android:layout_marginStart="10dp"/>
-
-
-                               <TextView
-                                   android:theme="@style/texttheme"
-                                   android:id="@+id/graceminute"
-                                   android:layout_width="80dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:text="999"
-                                   android:gravity="end"
-                                   android:layout_gravity="center"
-                                   android:textSize="15dp"
-                                   android:paddingStart="10dp"
-                                   android:layout_marginStart="-5dp"
-                                   android:layout_marginEnd="10dp"
-                                   android:paddingHorizontal="6dp"
-                                   android:paddingVertical="4dp"
-                                   android:textColor="@color/background"
-                                   android:singleLine="true"/>
-
-
-                               <TextView  android:theme="@style/texttheme"
-                                   android:layout_width="match_parent"
-                                   android:layout_height="match_parent"
-                                   android:layout_marginStart="1dp"
-                                   android:text="Grace Minutes"
-                                   android:gravity="center_vertical"
-                                   android:textSize="@dimen/sixteen" />
-
-                           </LinearLayout>
-
-                           <LinearLayout
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:orientation="horizontal"
-                               android:layout_marginTop="10dp">
-
-
-                               <TextView
-                                   android:id="@+id/currency5"
-                                   android:theme="@style/texttheme"
-                                   android:layout_width="70dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
-                                   android:text="USD $"
-                                   android:gravity="end"
-                                   android:singleLine="true"
-                                   android:textColor="@color/themebackgroundtext"
-                                   android:paddingHorizontal="15dp"
-                                   android:paddingVertical="4dp"
-                                   android:textSize="15dp"
-                                   android:layout_marginStart="10dp"/>
-
-
-                               <TextView
-                                   android:theme="@style/texttheme"
-                                   android:id="@+id/extramileagecharge"
-                                   android:layout_width="80dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:text="999"
-                                   android:gravity="end"
-                                   android:layout_gravity="center"
-                                   android:textSize="15dp"
-                                   android:paddingStart="10dp"
-                                   android:layout_marginStart="-5dp"
-                                   android:layout_marginEnd="10dp"
-                                   android:paddingHorizontal="6dp"
-                                   android:paddingVertical="4dp"
-                                   android:textColor="@color/background"
-                                   android:singleLine="true"/>
-
-
-                               <TextView
-                                   android:id="@+id/emc"
-                                   android:theme="@style/texttheme"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content"
-                                   android:layout_marginStart="1dp"
-                                   android:text="Extra Mileage Charge"
-                                   android:gravity="center_vertical"
-                                   android:textSize="@dimen/sixteen"/>
-
-                           </LinearLayout>
-
-                           <LinearLayout
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:orientation="horizontal"
-                               android:layout_marginTop="10dp">
-
-
-                               <TextView
-                                   android:id="@+id/currency6"
-                                   android:theme="@style/texttheme"
-                                   android:layout_width="70dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
-                                   android:text="USD $"
-                                   android:gravity="end"
-                                   android:singleLine="true"
-                                   android:textColor="@color/themebackgroundtext"
-                                   android:paddingHorizontal="15dp"
-                                   android:paddingVertical="4dp"
-                                   android:textSize="15dp"
-                                   android:layout_marginStart="10dp"/>
-
-
-                               <TextView
-                                   android:theme="@style/texttheme"
-                                   android:id="@+id/extrafuelcharge"
-                                   android:layout_width="80dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:text="999"
-                                   android:gravity="end"
-                                   android:layout_gravity="center"
-                                   android:textSize="15dp"
-                                   android:paddingStart="10dp"
-                                   android:layout_marginStart="-5dp"
-                                   android:layout_marginEnd="10dp"
-                                   android:paddingHorizontal="6dp"
-                                   android:paddingVertical="4dp"
-                                   android:textColor="@color/background"
-                                   android:singleLine="true"/>
-
-
-                               <TextView  android:theme="@style/texttheme"
-                                   android:layout_width="wrap_content"
-                                   android:layout_height="wrap_content"
-                                   android:layout_marginStart="1dp"
-                                   android:text="Extra Fuel / Gas Charge"
-                                   android:gravity="center_vertical"
-                                   android:textSize="@dimen/sixteen" />
-
-                           </LinearLayout>
-
-                           <LinearLayout
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:orientation="horizontal"
-                               android:layout_marginTop="10dp">
-
-
-                               <TextView
-                                   android:id="@+id/currency7"
-                                   android:theme="@style/texttheme"
-                                   android:layout_width="70dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
-                                   android:text="US $"
-                                   android:singleLine="true"
-                                   android:textColor="@color/themebackgroundtext"
-                                   android:gravity="end"
-                                   android:paddingHorizontal="15dp"
-                                   android:paddingVertical="4dp"
-                                   android:textSize="15dp"
-                                   android:layout_marginStart="10dp"/>
-
-
-                               <TextView
-                                   android:theme="@style/texttheme"
-                                   android:id="@+id/deposit"
-                                   android:layout_width="80dp"
-                                   android:layout_height="wrap_content"
-                                   android:background="@drawable/curve_white2"
-                                   android:text="99999"
-                                   android:gravity="end"
-                                   android:layout_gravity="center"
-                                   android:textSize="15dp"
-                                   android:paddingStart="10dp"
-                                   android:layout_marginStart="-5dp"
-                                   android:layout_marginEnd="10dp"
-                                   android:paddingHorizontal="6dp"
-                                   android:paddingVertical="4dp"
-                                   android:textColor="@color/background"
-                                   android:singleLine="true"/>
-
-
-                               <TextView
-                                   android:id="@+id/rd"
-                                   android:theme="@style/texttheme"
-                                   android:layout_width="match_parent"
-                                   android:layout_height="match_parent"
-                                   android:layout_marginStart="1dp"
-                                   android:text="Refundable Deposit"
-                                   android:gravity="center_vertical"
-                                   android:textSize="@dimen/sixteen" />
-
-                           </LinearLayout>
-                       </LinearLayout>
                    </LinearLayout>
                </LinearLayout>
+
            </androidx.core.widget.NestedScrollView>
        </LinearLayout>
 

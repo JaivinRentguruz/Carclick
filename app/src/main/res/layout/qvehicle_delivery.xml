@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+    android:background="@color/selected_dot">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/selectedlocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        app:UiColor="@{UiColor}"
+        layout="@layout/row_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/curve_box_for_bronzplan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="20"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/bronze_icon"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="3"
+                    android:layout_marginStart="@dimen/_minus30sdp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="17"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tier 1Plan"
+                            android:theme="@style/texttheme"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            android:textColor="@color/TitleTextColor"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bronze"
+                            android:theme="@style/texttheme"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            android:textColor="@color/TitleTextColor"/>
+
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="See All \nAvailable \nVehicles"
+                        android:gravity="end"
+                        android:textSize="12dp"
+                        android:theme="@style/texttheme"
+                        android:textColor="@color/TitleTextColor"
+                        android:layout_weight="2"/>
+-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/curve_box_for_bronzplan"
+                android:backgroundTint="#F7F7F7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/carImageType"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Vehicle Options"
+                    android:textColor="@color/fontwhitebackground"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"
+                    android:theme="@style/texttheme" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/textColorHint" />
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:src="@drawable/cars_display_image_3"
+                    android:scaleType="fitXY"/>
+
+
+                <LinearLayout
+                    android:background="@drawable/curve_box_for_bronzplan"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="start"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Select DeiveryDdate"
+                        android:textColor="@color/fontwhitebackground"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/texttheme" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/textColorHint" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/fontwhitebackground"
+                                android:text="OCT 09 2022 08:00PM"
+                                android:drawableStart="@drawable/ic_calender"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/_12ssp"
+                                android:theme="@style/texttheme"/>
+
+
+                        </LinearLayout>
+
+
+                    <LinearLayout
+                        android:background="@drawable/curve_box_for_bronzplan"
+                        android:backgroundTint="@color/linne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/fontwhitebackground"
+                                android:text="Delivery Address"
+                                android:drawableStart="@drawable/ic_location_white_icon"
+                                android:drawableTint="@color/txtBlack"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:textAllCaps="false"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp"
+                                android:theme="@style/texttheme"/>
+
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/txtWhite" />
+
+                        <EditText
+                            android:id="@+id/edtSearchLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/ic_rectangle_forsearch"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:hint="Villa 34, Al Reem 2, Arabian Ranches, Dubailand, UAE"
+                            android:singleLine="true"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/registerTextColor"
+                            android:textColorHint="@color/textColorHint"
+                            android:theme="@style/loginedit"
+                            android:textSize="@dimen/edt_font_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10">
+
+                           <androidx.cardview.widget.CardView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_marginTop="@dimen/_5sdp"
+                               app:cardCornerRadius="@dimen/_20sdp"
+                               android:layout_marginBottom="@dimen/_minus20sdp">
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/mapView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                           </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

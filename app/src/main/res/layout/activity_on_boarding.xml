@@ -17,7 +17,8 @@
         android:layout_width="@dimen/logow"
         android:layout_height="@dimen/logoh"
         android:adjustViewBounds="true"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_gravity="end"
         android:layout_marginTop="@dimen/_60sdp"/>
 
     <FrameLayout

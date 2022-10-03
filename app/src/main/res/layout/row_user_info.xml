@@ -5,7 +5,7 @@
     <data>
         <variable
             name="Customer"
-            type="com.rentguruz.app.model.Customer" />
+            type="com.rentguruz.app.b2b.carclick.model.Customer" />
     </data>
 
     <LinearLayout

@@ -8,7 +8,7 @@
 
         <variable
             name="CreditCard"
-            type="com.rentguruz.app.model.CreditCardModel" />
+            type="com.rentguruz.app.b2b.carclick.model.CreditCardModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -135,6 +135,7 @@
                     android:textColor="@color/themebackgroundtext"
                     android:textSize="23dp"
                     android:hint="123"
+                    android:singleLine="true"
                     android:textColorHint="@color/white"
                     android:theme="@style/texttheme" />
 

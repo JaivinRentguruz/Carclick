@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -530,7 +530,7 @@
                                         android:theme="@style/texttheme" />
                                 </LinearLayout>
 
-                                <com.rentguruz.app.base.ActionEditText
+                                <com.rentguruz.app.b2b.carclick.base.ActionEditText
                                     android:id="@+id/Edt_Notes"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"

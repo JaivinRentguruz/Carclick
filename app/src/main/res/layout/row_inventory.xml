@@ -6,7 +6,7 @@
 
         <variable
             name="Inventory"
-            type="com.rentguruz.app.model.reservation.ReservationInventory" />
+            type="com.rentguruz.app.b2b.carclick.model.reservation.ReservationInventory" />
     </data>
 
     <LinearLayout

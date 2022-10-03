@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -108,7 +108,7 @@
                                 android:orientation="horizontal"
                                 android:weightSum="100">
 
-                                <com.rentguruz.app.base.ActionEditText
+                                <com.rentguruz.app.b2b.carclick.base.ActionEditText
                                     android:id="@+id/customernote"
                                     style="@style/edittext"
                                     android:layout_width="0dp"
@@ -434,7 +434,7 @@
                                 android:orientation="horizontal"
                                 android:weightSum="100">
 
-                                <com.rentguruz.app.base.ActionEditText
+                                <com.rentguruz.app.b2b.carclick.base.ActionEditText
                                     android:id="@+id/internalnote"
                                     style="@style/edittext"
                                     android:layout_width="0dp"
@@ -590,15 +590,17 @@
                                     android:background="@drawable/curve_box_blue_with_border"
                                     android:gravity="center">
 
-                                    <TextView
+                                    <Spinner
+                                        android:id="@+id/authorised"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:inputType="textMultiLine"
-                                        android:padding="11dp"
-                                        android:text="Select User"
-                                        android:textColor="@color/textlightcolor"
-                                        android:textSize="@dimen/twelve"
-                                        android:theme="@style/texttheme" />
+                                        android:layout_marginTop="0dp"
+                                        style="@style/spinner"
+                                        android:background="@drawable/ic_small_dropdown"
+                                        android:theme="@style/loginedit"
+                                        android:focusableInTouchMode="true"
+                                        android:focusable="true"
+                                        android:windowSoftInputMode="stateHidden" />
 
                                    <!-- <ToggleButton
                                         android:layout_width="40dp"

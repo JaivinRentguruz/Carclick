@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:custom="http://schemas.android.com/apk/com.rentguruz.app"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     tools:context=".flexiicar.user.Fragment_Agreement_DateChange">
     <data>
         <import type="android.graphics.Color"/>
@@ -10,7 +10,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -271,7 +271,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="2dp"
+                    android:layout_marginVertical="5dp"
                     android:layout_marginTop="8dp"
                     android:orientation="horizontal"
                     android:weightSum="10">
@@ -486,9 +486,9 @@
                         custom:disable_date_color="#CAD5D8"
                         custom:editable="true"
                         custom:enable_time_selection="false"
-                        custom:range_color="@color/lightgreen"
-                        custom:selected_date_circle_color="@color/footerButtonBC"
-                        custom:title_color="@color/MGrey"
+                        custom:range_color="@color/ldate"
+                        custom:selected_date_circle_color="@color/sdate"
+                        custom:title_color="@color/regtcolor"
                         custom:week_offset="0">
                     </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
                 </LinearLayout>

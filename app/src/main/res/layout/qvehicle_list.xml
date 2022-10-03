@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+    </data>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/curve_box"
+        android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BROWSE VEHICLES"
+            android:theme="@style/texttheme"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@{Color.parseColor(UiColor.primary)}"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/car_sample_test"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMW X3 SUV"
+                android:theme="@style/texttheme"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_3sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@{Color.parseColor(UiColor.primary)}"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</layout>

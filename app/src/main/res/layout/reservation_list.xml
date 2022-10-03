@@ -3,18 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <import type="android.graphics.Color" />
-
         <import type="androidx.core.content.ContextCompat" />
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
         <variable
             name="Reservation"
-            type="com.rentguruz.app.model.response.Reservation" />
+            type="com.rentguruz.app.b2b.carclick.model.response.Reservation" />
     </data>
 
     <LinearLayout
@@ -154,7 +152,7 @@
                                     android:layout_marginTop="@dimen/_minus2sdp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="E"
-                                    android:textColor="@color/white"
+                                    android:textColor="@{Color.parseColor(UiColor.secondaryfont)}"
                                     android:textSize="@dimen/textsize_nine"
                                     android:textStyle="bold" />
 
@@ -171,7 +169,6 @@
                                 android:singleLine="true"
                                 android:text="@={Reservation.Email}"
                                 android:textAllCaps="false"
-                                android:textColor="@color/TitleTextColor"
                                 android:textSize="@dimen/eleven"
                                 android:theme="@style/texttheme" />
                         </LinearLayout>
@@ -204,7 +201,7 @@
                                     android:layout_marginTop="@dimen/_minus2sdp"
                                     android:gravity="center_horizontal|center_vertical"
                                     android:text="T"
-                                    android:textColor="@color/white"
+                                    android:textColor="@{Color.parseColor(UiColor.secondaryfont)}"
                                     android:textSize="@dimen/textsize_nine"
                                     android:textStyle="bold" />
 
@@ -219,7 +216,6 @@
                                 android:gravity="center_vertical"
                                 android:singleLine="true"
                                 android:text="@={Reservation.MobileNo}"
-                                android:textColor="@color/TitleTextColor"
                                 android:textSize="@dimen/eleven"
                                 android:theme="@style/texttheme" />
                         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -426,7 +422,7 @@
                                     android:layout_height="wrap_content"
                                     android:hint=""
                                     android:text="@={Reservation.PickUpLocationName}"
-                                    android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                                    android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                     android:textSize="@dimen/heading1_font_size"
                                     android:theme="@style/texttheme" />
 
@@ -456,7 +452,7 @@
                                     android:layout_marginTop="15dp"
                                     android:hint=""
                                     android:text="@={Reservation.DropLocationName}"
-                                    android:textColor="@{Color.parseColor(UiColor.secondary)}"
+                                    android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                     android:textSize="@dimen/heading1_font_size"
                                     android:theme="@style/texttheme" />
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:custom="http://schemas.android.com/apk/com.rentguruz.app">
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.graphics.Color"/>
@@ -9,11 +9,11 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
         <variable
             name="label"
-            type="com.rentguruz.app.model.response.CompanyLabel" />
+            type="com.rentguruz.app.b2b.carclick.model.response.CompanyLabel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -477,9 +477,10 @@
                                 <ImageView
                                     android:layout_marginRight="5dp"
                                     android:layout_width="wrap_content"
-                                    android:src="@drawable/ic_calander_black_icon"
+                                    android:background="@drawable/ic_calander_black_icon"
                                     android:layout_height="wrap_content"
-                                    app:tint="@color/white" />
+                                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                                     />
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:orientation="vertical"
@@ -493,7 +494,7 @@
                                     android:theme="@style/texttheme"
                                     android:text="SELECT DATE"
                                     android:layout_margin="3dp"
-                                    android:textColor="@color/datecolor"
+                                    android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                     android:textSize="@dimen/_13ssp"/>
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -510,7 +511,7 @@
                                             android:theme="@style/texttheme"
                                             android:text="Select"
                                             android:textAllCaps="false"
-                                            android:textColor="@color/datecolor"
+                                            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                             android:textSize="@dimen/_11ssp"/>
                                     </LinearLayout>
                                 </LinearLayout>
@@ -539,9 +540,9 @@
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_marginRight="5dp"
-                                    android:src="@drawable/ic_calander_black_icon"
-                                    app:tint="@color/white"
-                                    android:layout_height="wrap_content"/>
+                                    android:background="@drawable/ic_calander_black_icon"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:orientation="vertical"
@@ -555,7 +556,7 @@
                                         android:theme="@style/texttheme"
                                         android:text="SELECT DATE"
                                         android:layout_margin="3dp"
-                                        android:textColor="@color/datecolor"
+                                        android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                         android:textSize="@dimen/_13ssp"/>
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -572,7 +573,7 @@
                                             android:theme="@style/texttheme"
                                             android:text="Select"
                                             android:textAllCaps="false"
-                                            android:textColor="@color/datecolor"
+                                            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                             android:textSize="@dimen/_11ssp"/>
                                     </LinearLayout>
                                 </LinearLayout>
@@ -814,11 +815,12 @@
                         custom:disable_date_color="#CAD5D8"
                         custom:editable="true"
                         custom:enable_time_selection="false"
-                        custom:range_color="@color/lightgreen"
-                        custom:selected_date_circle_color="@color/footerButtonBC"
+                        custom:range_color="@color/ldate"
+                        custom:selected_date_circle_color="@color/sdate"
                         custom:title_color="@color/regtcolor"
                         custom:week_offset="0">
                     </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>

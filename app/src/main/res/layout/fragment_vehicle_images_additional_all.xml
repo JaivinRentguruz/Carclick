@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -428,7 +428,7 @@
                         android:gravity="center"
                         android:text="@string/next"
                         android:textAllCaps="false"
-                        android:textColor="@color/btntext"
+                        android:textColor="@{Color.parseColor(UiColor.primary)}"
                         android:textSize="16dp" />
                 </LinearLayout>
             </LinearLayout>

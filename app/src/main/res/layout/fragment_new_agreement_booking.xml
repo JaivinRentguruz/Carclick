@@ -8,11 +8,11 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
         <variable
             name="label"
-            type="com.rentguruz.app.model.response.CompanyLabel" />
+            type="com.rentguruz.app.b2b.carclick.model.response.CompanyLabel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,13 +39,14 @@
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fillViewport="true"
                 android:background="@drawable/curve_box_light_green_bg"
                 android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
                 android:paddingTop="@dimen/_10sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_minus5sdp"
                     android:orientation="vertical">
 
@@ -60,7 +61,7 @@
                         android:background="@color/lightgreen"
                         android:backgroundTint="@{Color.parseColor(UiColor.additionalcolor)}"
                         android:orientation="vertical"
-                        android:layout_marginTop="@dimen/_minus10sdp"
+                        android:layout_marginTop="@dimen/_minus27sdp"
                         android:paddingBottom="@dimen/_25sdp">
 
                         <include
@@ -70,23 +71,25 @@
 
                     </LinearLayout>
 
+
+
                     <LinearLayout
                         android:id="@+id/accessories_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:minHeight="@dimen/_350sdp"
                         android:layout_marginTop="@dimen/_minus23sdp"
                         android:background="@drawable/top_curve_box1"
-                        android:paddingBottom="@dimen/_60sdp"
                         android:backgroundTint="@color/white"
                         android:orientation="vertical">
 
+
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginEnd="@dimen/_10sdp"
                             android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
                             android:orientation="vertical">
 
 
@@ -766,6 +769,7 @@
                         </LinearLayout>
 
                     </LinearLayout>
+
                 </LinearLayout>
 
             </androidx.core.widget.NestedScrollView>

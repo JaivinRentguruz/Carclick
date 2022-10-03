@@ -6,10 +6,10 @@
         <import type="androidx.core.content.ContextCompat" />
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
         <variable
             name="CreditCard"
-            type="com.rentguruz.app.model.CreditCardModel" />
+            type="com.rentguruz.app.b2b.carclick.model.CreditCardModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

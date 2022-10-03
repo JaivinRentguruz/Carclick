@@ -8,10 +8,10 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
         <variable
             name="Driver"
-            type="com.rentguruz.app.model.response.UpdateDL" />
+            type="com.rentguruz.app.b2b.carclick.model.response.UpdateDL" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout

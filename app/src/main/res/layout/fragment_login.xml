@@ -8,7 +8,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                 android:layout_gravity="center|center_horizontal|center_vertical"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="Welcome Back"
-                android:textColor="@color/themebackgroundtext"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="28dp"
                 android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
                 android:gravity="center_horizontal|center_vertical"
                 android:layout_marginTop="5dp"
                 android:text="Please login to your account"
-                android:textColor="@color/themebackgroundtext"
+                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                 android:textSize="16dp" />
             </RelativeLayout>
         </LinearLayout>
@@ -64,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/llWelcomeNote"
+            android:backgroundTint="@{Color.parseColor(UiColor.AddtionalSecondColour)}"
             android:background="@drawable/curve_box">
 
             <LinearLayout
@@ -77,7 +78,6 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:gravity="center_vertical">
 
                     <ImageView
@@ -334,6 +334,7 @@
                 android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
                 android:gravity="center"
                 android:orientation="vertical">
+
 
 
                 <TextView

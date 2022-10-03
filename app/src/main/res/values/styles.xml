@@ -281,6 +281,7 @@
     </style>-->
 
     <!-- Base application theme. -->
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -340,9 +341,9 @@
         <item name="cornerSizeBottomLeft">@dimen/_10sdp</item>
     </style>
 
-    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">@color/red</item>
 
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#68737A</item><!-- <item name="colorAccent">#68737A</item>-->
      <!--<item name="android:textColorPrimaryInverse">@color/red</item>
         <item name="android:textColorSecondaryInverse">@color/red</item>
         <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
@@ -350,6 +351,7 @@
         <item name="android:colorControlHighlight">@color/red</item>
         <item name="android:colorControlActivated">@color/red</item>-->
     </style>
+
 
     <style name="dlg_datePicker" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:datePickerStyle">@style/datePicker_style</item>
@@ -745,7 +747,20 @@
         <item name="android:layout_centerInParent">true</item>
     </style>
 
+    <style name="shapeImagetopcurve">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="shapeAppearance">@style/roundedImageViewRoundedtop</item>
+        <!--<item name="android:src">@drawable/car_img_bc</item>-->
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
 
+    <style name="roundedImageViewRoundedtop">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_16sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_16sdp</item>
+    </style>
 
     <style name="Theme.AppCompat.Transparent.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>

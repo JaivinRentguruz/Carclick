@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+        android:background="@color/selected_dot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/process"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        app:UiColor="@{UiColor}"
+        layout="@layout/row_header" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:layout_gravity="center_vertical|center"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/backs"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                android:background="@drawable/ic_chevron_left" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="90">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/curve_text_line"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MID SIZE SEDAN"
+                    android:theme="@style/texttheme"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HONDA"
+                    android:theme="@style/texttheme"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CIVIC EX"
+                    android:theme="@style/texttheme"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/backss"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                android:rotation="180"
+                android:background="@drawable/ic_chevron_left" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/curve_box_white_2"
+            android:gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/Vehicle_Img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:orientation="horizontal"
+                android:scaleType="fitXY"
+                app:shapeAppearance="@style/roundedImageViewRounded22"/>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curve_box"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/specific"
+                    layout="@layout/specification"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/include"
+                    android:textColor="@color/regtcolor"
+                    android:textSize="@dimen/edt_font_size"
+                    android:theme="@style/texttheme" />
+
+                <include layout="@layout/include_details"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="SELECT DATE"
+                    android:textColor="@color/regtcolor"
+                    android:textSize="@dimen/edt_font_size"
+                    android:theme="@style/texttheme" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp">
+
+                <include
+                    android:id="@+id/pickup"
+                    app:UiColor="@{UiColor}"
+                    layout="@layout/pickup_drop_change_date" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textColorHint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:id="@+id/deposit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="9dp"
+                            android:layout_weight="5"
+
+                            android:gravity="left"
+                            android:text="Deposit"
+                            android:textColor="@color/txtBlack"
+                            android:theme="@style/texttheme"
+                            android:textSize="@dimen/edt_font_size"/>
+
+                        <TextView
+                            android:id="@+id/refund"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="10"
+                            android:gravity="right"
+                            android:theme="@style/texttheme"
+
+                            android:text="USD 100.00 / REFUNDABLE"
+                            android:textColor="@color/txtBlack"
+                            android:textSize="@dimen/fab_margin"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="3dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="75dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/fontwhitebackground"
+                            android:gravity="right"
+                            android:theme="@style/texttheme"
+                            android:text="*A one time security deposit required to cover\nthe cost of any additional fees incur upon return."
+                            android:textSize="@dimen/textsize_ten"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/process"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottommenuheight"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/bottommenucolor"
+            android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+            android:weightSum="100">
+
+        <include
+            android:id="@+id/btm"
+            app:UiColor="@{UiColor}"
+            layout="@layout/btm_charges"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -7,11 +7,11 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
         <variable
             name="label"
-            type="com.rentguruz.app.model.response.CompanyLabel" />
+            type="com.rentguruz.app.b2b.carclick.model.response.CompanyLabel" />
     </data>
 
 <LinearLayout

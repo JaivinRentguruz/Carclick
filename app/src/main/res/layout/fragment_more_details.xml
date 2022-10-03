@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -538,7 +538,7 @@
                             android:textColor="@color/textlightcolor"
                              style="@style/textfont"
                             android:layout_height="match_parent"
-                            android:text="Check-In"/>
+                            android:text="Check-In ( Comming Soon )"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -585,7 +585,7 @@
                             android:textColor="@color/textlightcolor"
                              style="@style/textfont"
                             android:layout_height="match_parent"
-                            android:text="Inspection"/>
+                            android:text="Inspection ( Comming Soon )"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -632,7 +632,7 @@
                             android:textColor="@color/textlightcolor"
                              style="@style/textfont"
                             android:layout_height="match_parent"
-                            android:text="Organizer"/>
+                            android:text="Organizer ( Comming Soon )"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -679,7 +679,7 @@
                             android:textColor="@color/textlightcolor"
                              style="@style/textfont"
                             android:layout_height="match_parent"
-                            android:text="Calender"/>
+                            android:text="Calender ( Comming Soon )"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -727,7 +727,7 @@
                             android:textColor="@color/textlightcolor"
                              style="@style/textfont"
                             android:layout_height="match_parent"
-                            android:text="Report"/>
+                            android:text="Report ( Comming Soon )"/>
                     </LinearLayout>
                 </LinearLayout>
 

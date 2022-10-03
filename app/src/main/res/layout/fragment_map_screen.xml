@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,7 +21,7 @@
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
             android:layout_width="match_parent"
-            android:layout_marginBottom="65dp"
+            android:layout_above="@+id/lblcontinue1"
             android:layout_height="match_parent" />
 
         <LinearLayout
@@ -56,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/curve_box_white_22"
-                    android:backgroundTint="@color/red"
+                    android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
                     android:layout_gravity="right">
 
                     <ImageView
@@ -99,23 +108,33 @@
             android:id="@+id/lblcontinue1"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="@dimen/bottommenuheight"
             android:layout_gravity="center"
             android:gravity="top"
             android:background="@color/black"
+            android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:weightSum="15"
                 android:layout_marginTop="10dp"
                 android:layout_height="match_parent">
-                <ImageView
+               <!-- <ImageView
                     android:layout_width="0dp"
                     android:layout_weight="3"
                     android:src="@drawable/ic_tab_home_icon_green"
                     app:tint="@color/bottommenuactivecolor"
                     android:layout_height="wrap_content">
+                </ImageView>-->
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_tab_home_icon_green"
+                    app:tint="@color/bottommenudeactivecolor"
+                    android:layout_height="wrap_content">
                 </ImageView>
+
                 <ImageView
                     android:id="@+id/reservation"
                     android:layout_width="0dp"
@@ -153,3 +172,4 @@
     </RelativeLayout>
 
 </RelativeLayout>
+</layout>

@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,7 +53,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/green" />
+                android:background="@color/green"
+                android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"/>
 
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
@@ -143,13 +144,12 @@
                                 android:layout_marginRight="5dp"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:background="@drawable/ic_upload_logo_bg">
+                                style="@style/relativeImageshort">
 
-                            <ImageView
-                                android:id="@+id/image"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/pluse_img"/>
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:id="@+id/image"
+                                    style="@style/shapeImage" />
+
 
                             </RelativeLayout>
 
@@ -510,6 +510,7 @@
                 android:layout_height="match_parent">
                 <TextView
                     style="@style/fullbtn"
+                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
                     android:text="@string/save"/>
 
                 <!--<TextView

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <shape android:shape="rectangle" android:innerRadius="0dp">
+        <shape android:shape="rectangle" android:innerRadius="@dimen/cc_radius">
             <solid android:color="@color/registationheadselected"></solid>
-            <corners android:topLeftRadius="0dp" android:topRightRadius="0dp"></corners>
+            <corners android:radius="@dimen/cc_radius"></corners>
         </shape>
     </item>
 </selector>

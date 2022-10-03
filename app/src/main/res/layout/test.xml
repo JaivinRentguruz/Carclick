@@ -8,7 +8,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -243,8 +243,8 @@
                         </LinearLayout>
 
                         <RelativeLayout
-                            android:layout_width="@dimen/_150sdp"
-                            android:layout_height="@dimen/_75sdp"
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_55sdp"
                             android:layout_marginRight="10dp"
                             android:layout_alignParentRight="true"
                             android:gravity="end"
@@ -253,8 +253,9 @@
                             <ImageView
                                 android:id="@+id/logo"
                                 android:src="@drawable/car_img_bc"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
                                 android:adjustViewBounds="true" />
 
                         </RelativeLayout>

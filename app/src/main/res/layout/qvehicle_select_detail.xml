@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+        android:background="@color/selected_dot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        app:UiColor="@{UiColor}"
+        layout="@layout/row_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curve_box"
+            android:fillViewport="true">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    style="@style/shapeImagetopcurve"
+                    android:layout_centerInParent="false"
+                    android:layout_height="@dimen/_250sdp"
+                    android:src="@drawable/car_test_image"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Basics"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:theme="@style/texttheme"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Select your first car. It’s a year lease. Keep it for the
+year, or after 4 months or the next exchange period,
+whichever is later, turn it in early and get another car
+for the remainder of your lease. Rinse and repeat.
+"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:theme="@style/texttheme"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@color/linecolor"
+                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Getting new car"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:theme="@style/texttheme"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="As you approach the next exchange period, we’ll let you know if you are eligible or need to wait until the following exchange period. If you are eligible, we will notify you to choose from among the available cars and select an exchange appointment about one month in advance of the actual exchange period. When the exchange appointment arrives, your selected vehicle will be available for pickup or will be delivered to you if you’ve chosen delivery.
+"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:theme="@style/texttheme"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@color/linecolor"
+                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
+            </LinearLayout>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

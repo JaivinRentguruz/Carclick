@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -40,20 +40,29 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:weightSum="10">
+                    <RelativeLayout
+                        android:id="@+id/hsmap"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:visibility="visible"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp">
 
                     <ImageView
                         android:id="@+id/back"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/_5sdp"
-                        android:paddingLeft="@dimen/_5sdp"
-                        android:paddingRight="@dimen/_5sdp"
-                        android:src="@drawable/ic_chevron_left" />
-
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                        android:background="@drawable/ic_chevron_left" />
+                    </RelativeLayout>
                     <TextView
                         android:id="@+id/screenHeader"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_minus1sdp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:fontFamily="@font/quicksand_regular"
                         android:gravity="center_vertical"
@@ -62,27 +71,31 @@
                         android:layout_weight="10"
                         android:text=""
                         android:textAllCaps="false"
-                        android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
-                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@{Color.parseColor(UiColor.primary)}"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold"
                         android:theme="@style/texttheme" />
 
                     <TextView
                         android:id="@+id/discard"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_minus1sdp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
                         android:fontFamily="@font/quicksand_regular"
                         android:gravity="center_vertical"
                         android:text="@string/discard"
                         android:textAllCaps="false"
-                        android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
-                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@{Color.parseColor(UiColor.primary)}"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold"
                         android:theme="@style/texttheme" />
 
                     <ImageView
+                        android:layout_marginTop="@dimen/_minus1sdp"
                         android:id="@+id/optionmenu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -90,7 +103,8 @@
                         android:paddingLeft="@dimen/_5sdp"
                         android:paddingRight="@dimen/_5sdp"
                         android:layout_toRightOf="@id/discard"
-                        android:src="@drawable/ic_baseline_more_vert_24"/>
+                        android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                        android:background="@drawable/ic_baseline_more_vert_24"/>
 
                 </LinearLayout>
 

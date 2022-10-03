@@ -9,7 +9,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -67,31 +67,31 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="6dp"
+                    android:layout_width="@dimen/c_line_width"
+                    android:layout_height="@dimen/c_line_height"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/progress_rectangle_selected"
                     android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="6dp"
+                    android:layout_width="@dimen/c_line_width"
+                    android:layout_height="@dimen/c_line_height"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/progress_rectangle_default"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="6dp"
+                    android:layout_width="@dimen/c_line_width"
+                    android:layout_height="@dimen/c_line_height"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/progress_rectangle_default"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="6dp"
+                    android:layout_width="@dimen/c_line_width"
+                    android:layout_height="@dimen/c_line_height"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/progress_rectangle_default"/>
 
@@ -139,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:text="@string/create_your_profile"
-                    android:textColor="@color/topcolor"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"
                     style="@style/titletext"/>
 
             </LinearLayout>
@@ -184,6 +184,8 @@
                     android:hint="@string/first_name"
                     android:focusableInTouchMode="true"
                     android:focusable="true"
+                    android:inputType=
+                        "textCapSentences|textAutoCorrect"
                     android:imeOptions="actionNext"
                     android:nextFocusLeft="@id/edtcust_Lname"
                     android:windowSoftInputMode="adjustResize|adjustPan"/>
@@ -195,6 +197,8 @@
                         android:textAlignment="textStart"
                         android:hint="@string/last_name"
                         android:layout_marginLeft="10dp"
+                        android:inputType=
+                            "textCapSentences|textAutoCorrect"
                         android:background="@drawable/ic_rectangle_box_2152"
                         android:focusableInTouchMode="true"
                         android:focusable="true"

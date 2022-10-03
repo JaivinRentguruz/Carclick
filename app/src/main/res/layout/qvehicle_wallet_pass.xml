@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+    android:background="@color/selected_dot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            app:UiColor="@{UiColor}"
+            layout="@layout/row_header" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/selectedlocation"
+                android:padding="8dp"
+                android:background="@drawable/curve_box">
+
+                <LinearLayout
+                    android:id="@+id/selectedlocationlayout"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@drawable/rectangle_box"
+                    android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/icons"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:adjustViewBounds="true" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:paddingTop="3dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:theme="@style/texttheme"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:text="Agreement No. 363636\n Bronze Collection"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:textSize="@dimen/heading1_font_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:background="@color/seperatorcolor"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="Pickup"
+                                android:gravity="left"
+                                android:layout_gravity="left"
+                                android:theme="@style/texttheme"
+                                android:textSize="@dimen/edt_font_size"
+                                android:layout_width="0dp"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="Return"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:theme="@style/texttheme"
+                                android:textSize="@dimen/edt_font_size"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="11"
+                            android:layout_marginTop="2dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="12 SEP 2022"
+                                android:gravity="left"
+                                android:layout_gravity="left"
+                                android:theme="@style/texttheme"
+                                android:textSize="21dp"
+                                android:layout_width="0dp"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                            </ImageView>
+                            <TextView
+                                android:text="14 SEP 2022"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:theme="@style/texttheme"
+                                android:textSize="21dp"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="14:30 pm"
+                                android:gravity="left"
+                                android:layout_gravity="left"
+                                android:theme="@style/texttheme"
+                                android:textSize="@dimen/heading1_font_size"
+                                android:layout_width="0dp"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="14:30 pm"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:theme="@style/texttheme"
+                                android:textSize="@dimen/heading1_font_size"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="@dimen/_3sdp"
+                            android:background="@color/seperatorcolor"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:theme="@style/texttheme"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:textSize="@dimen/txt_seventeen"
+                                android:text="2020 BMW X6 3.0"
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:theme="@style/texttheme"
+                                android:padding="3dp"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:textSize="@dimen/txt_font_size"
+                                android:text="SUV / LIC3030303 / VIN232123123123"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/car_sample_test"
+                                android:adjustViewBounds="true"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content">
+                            </ImageView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="@dimen/_3sdp"
+                            android:background="@color/seperatorcolor"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:theme="@style/texttheme"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:textSize="@dimen/txt_seventeen"
+                                android:text="Peter Thomas"
+                                android:padding="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:theme="@style/texttheme"
+                                android:padding="3dp"
+                                android:textColor="@{Color.parseColor(UiColor.additionalcolor)}"
+                                android:textSize="@dimen/txt_font_size"
+                                android:text="971 50 4654554683\n peter@etisalat.com"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:gravity="left"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/icon"
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:layout_width="@dimen/icon"
+                                    android:layout_height="@dimen/icon"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:adjustViewBounds="true" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="5"
+                                android:gravity="right"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:src="@drawable/barcode_img"
+                                    android:layout_width="@dimen/icon"
+                                    android:layout_height="@dimen/icon"
+                                    android:adjustViewBounds="true">
+                                </ImageView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

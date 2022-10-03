@@ -6,7 +6,7 @@
     <data>
         <variable
             name="Vehicle"
-            type="com.rentguruz.app.model.response.VehicleModel" />
+            type="com.rentguruz.app.b2b.carclick.model.response.VehicleModel" />
     </data>
 
 <LinearLayout

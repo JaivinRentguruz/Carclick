@@ -7,7 +7,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -1045,7 +1045,7 @@
               android:orientation="horizontal"
               android:weightSum="100">
 
-              <com.rentguruz.app.base.ActionEditText
+              <com.rentguruz.app.b2b.carclick.base.ActionEditText
                   android:layout_width="0dp"
                   android:layout_height="wrap_content"
                   android:layout_weight="100"

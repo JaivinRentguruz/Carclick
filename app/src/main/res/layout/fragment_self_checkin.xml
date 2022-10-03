@@ -8,7 +8,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                                 android:gravity="center"
 
                                 android:text="VHG02020"
-                                android:textColor="@color/screen_bg_color"
+                                android:textColor="@{Color.parseColor(UiColor.primary)}"
                                 android:textSize="16dp"
                                 android:theme="@style/texttheme" />
                         </LinearLayout>
@@ -176,8 +176,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="Check In Details"
-                                    android:textColor="@color/themebackgroundtext"
-
+                                    android:textColor="@{Color.parseColor(UiColor.primary)}"
                                     android:textSize="16dp"
                                     android:theme="@style/texttheme" />
                             </LinearLayout>
@@ -508,7 +507,7 @@
                                         android:background="@drawable/black_curve"
                                         android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
                                         android:text="00"
-                                        android:maxLength="7"
+                                        android:maxLength="6"
                                         android:inputType="number"
                                         android:imeOptions="actionDone"
                                         android:textColor="@color/white"
@@ -1359,6 +1358,7 @@
                 <TextView
                     style="@style/shortbtn"
                     android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"
                     android:text="Calculate"/>
                 <!--<TextView
                     android:layout_width="match_parent"
@@ -1383,6 +1383,7 @@
                 <TextView
                     style="@style/shortbtn"
                     android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+                    android:textColor="@{Color.parseColor(UiColor.primary)}"
                     android:text="@string/accept"/>
 
                 <!--<TextView

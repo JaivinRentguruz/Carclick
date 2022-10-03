@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/Reservations">
 
+    <include app:graph="@navigation/nav_graph_user"/>
+
     <fragment
         android:id="@+id/Reservations"
-        android:name="com.rentguruz.app.home.reservation.Fragment_Reservations"
+        android:name="com.rentguruz.app.b2b.carclick.home.reservation.Fragment_Reservations"
         android:label="Reservations"
         tools:layout="@layout/fragment_reservation">
 
@@ -37,7 +39,7 @@
     </fragment>-->
 
     <fragment android:id="@+id/Location"
-        android:name="com.rentguruz.app.home.Fragment_Selected_Location"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Selected_Location"
         android:label="Select Location"
         tools:layout="@layout/fragment_selected_location12">
 
@@ -56,7 +58,7 @@
 
     <fragment
         android:id="@+id/Available_location"
-        android:name="com.rentguruz.app.home.Fragment_Available_location"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Available_location"
         android:label="Available_location"
         tools:layout="@layout/fragment_available_location">
         <action
@@ -69,7 +71,7 @@
 
     <fragment
         android:id="@+id/Vehicles_Type_Available"
-        android:name="com.rentguruz.app.home.Fragment_VehiclesType_Available"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_VehiclesType_Available"
         android:label="Vehicles_Available"
         tools:layout="@layout/fragment_vehicles_available">
 
@@ -86,7 +88,7 @@
 
     <fragment
         android:id="@+id/Vehicles_Available"
-        android:name="com.rentguruz.app.home.Fragment_Vehicles_Available"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Vehicles_Available"
         android:label="Vehicles_Available"
         tools:layout="@layout/fragment_vehicles_available">
 
@@ -99,7 +101,7 @@
     </fragment>
 
     <fragment android:id="@+id/New_Agreement"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement"
         android:label="Add New Agreement"
         tools:layout="@layout/fragment_new_agreement">
 
@@ -121,7 +123,7 @@
     </fragment>
 
     <fragment android:id="@+id/CustomerList"
-        android:name="com.rentguruz.app.home.Fragment_Customer"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Customer"
         android:label="Customer List"
         tools:layout="@layout/fragment_customer_list">
 
@@ -140,7 +142,7 @@
 
     <fragment
         android:id="@+id/CreateProfile"
-        android:name="com.rentguruz.app.flexiicar.login.Fragment_Create_Profile"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.login.Fragment_Create_Profile"
         android:label="Create Profile"
         tools:layout="@layout/fragment_create_profile">
         <action
@@ -150,7 +152,7 @@
 
     <fragment
         android:id="@+id/DriverProfile"
-        android:name="com.rentguruz.app.flexiicar.login.Fragment_Driver_Profile_1"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.login.Fragment_Driver_Profile_1"
         android:label="Profile"
         tools:layout="@layout/fragment_driver_profile_1">
         <action
@@ -163,7 +165,7 @@
 
     <fragment
         android:id="@+id/DriverProfile2"
-        android:name="com.rentguruz.app.flexiicar.login.Fragment_Driver_Profile_2"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.login.Fragment_Driver_Profile_2"
         android:label="LicenseDetails"
         tools:layout="@layout/fragment_driver_profile_2">
         <action
@@ -187,7 +189,7 @@
     </fragment>
     <fragment
         android:id="@+id/DriverProfile3"
-        android:name="com.rentguruz.app.flexiicar.login.Fragment_Driver_Profile_3"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.login.Fragment_Driver_Profile_3"
         android:label="Profile"
         tools:layout="@layout/fragment_driver_profile_3">
         <action
@@ -203,7 +205,7 @@
     </fragment>
     <fragment
         android:id="@+id/DriverProfile4"
-        android:name="com.rentguruz.app.flexiicar.login.Fragment_Driver_Profile_4"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.login.Fragment_Driver_Profile_4"
         android:label="Creditcard Details"
         tools:layout="@layout/fragment_driver_profile_4">
         <action
@@ -219,20 +221,20 @@
 
     <fragment
         android:id="@+id/Complete_Register"
-        android:name="com.rentguruz.app.flexiicar.login.Fragment_Register_Completed"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.login.Fragment_Register_Completed"
         android:label="Creditcard Details"
         tools:layout="@layout/fragment_registration_completed">
     </fragment>
 
     <fragment android:id="@+id/New_Agreement_slider"
-        android:name="com.rentguruz.app.home.Fragment_Slider_Custom_Rental"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Slider_Custom_Rental"
         android:label="Slider"
         tools:layout="@layout/slider_custom_rental">
 
     </fragment>
 
     <fragment android:id="@+id/Booking"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_booking"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_booking"
         android:label="Slider"
         tools:layout="@layout/fragment_new_agreement_booking">
 
@@ -271,7 +273,7 @@
 
 
     <fragment android:id="@+id/Insurance"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Insurance"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Insurance"
         android:label="Insurance"
         tools:layout="@layout/fragment_new_agreement_insurance">
 
@@ -285,7 +287,7 @@
 
 
     <fragment android:id="@+id/AddInsurance"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Add_Insurance"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Add_Insurance"
         android:label="AddInsurance"
         tools:layout="@layout/fragment_new_agreement_add_insurance">
 
@@ -295,7 +297,7 @@
 
 
     <fragment android:id="@+id/Driver"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Driver"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Driver"
         android:label="Driver"
         tools:layout="@layout/fragment_new_agreement_driver">
 
@@ -308,7 +310,7 @@
     </fragment>
 
     <fragment android:id="@+id/DriverCreate"
-        android:name="com.rentguruz.app.home.Fragment_Create_Additional_Driver"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Create_Additional_Driver"
         android:label="Driver Details"
         tools:layout="@layout/fragment_create_additional_driver">
 
@@ -319,7 +321,7 @@
 
 
     <fragment android:id="@+id/AddDriver1"
-        android:name="com.rentguruz.app.home.Fragment_Additional_Driver_Profile1"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Additional_Driver_Profile1"
         android:label="Add Driver"
         tools:layout="@layout/fragment_additional_driver_profile_1">
 
@@ -329,7 +331,7 @@
     </fragment>
 
     <fragment android:id="@+id/AddDriver2"
-        android:name="com.rentguruz.app.home.Fragment_Additional_Driver_Profile2"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Additional_Driver_Profile2"
         android:label="Add Driver"
         tools:layout="@layout/fragment_additional_driver_profile_2">
 
@@ -340,7 +342,7 @@
 
 
     <fragment android:id="@+id/Driverdetails"
-        android:name="com.rentguruz.app.home.Fragment_Additional_Driver_Details"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Additional_Driver_Details"
         android:label="Driver Details"
         tools:layout="@layout/fragment_additional_driver_detail">
 
@@ -355,7 +357,7 @@
 
 
     <fragment android:id="@+id/Refferrels"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Refferrels"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Refferrels"
         android:label="Refferrels"
         tools:layout="@layout/fragment_new_agreement_referal">
 
@@ -365,7 +367,7 @@
     </fragment>
 
     <fragment android:id="@+id/AddRefferrels"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Add_Refferrels"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Add_Refferrels"
         android:label="Add Refferrels"
         tools:layout="@layout/fragment_new_agreement_add_referrals">
 
@@ -375,7 +377,7 @@
 
 
     <fragment android:id="@+id/Equipment"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Equipment"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Equipment"
         android:label="Equipment"
         tools:layout="@layout/fragment_new_agreement_equipment">
 
@@ -388,7 +390,7 @@
     </fragment>
 
     <fragment android:id="@+id/AddEquipment"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Add_Equipment"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Add_Equipment"
         android:label="AddEquipment"
         tools:layout="@layout/fragment_new_agreement_add_equipment">
 
@@ -397,7 +399,7 @@
     </fragment>
 
     <fragment android:id="@+id/Inventory"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Inventory"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Inventory"
         android:label="Inventory"
         tools:layout="@layout/fragment_new_agreement_inventory">
 
@@ -411,7 +413,7 @@
 
 
     <fragment android:id="@+id/AddInventory"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Add_Inventory"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Add_Inventory"
         android:label="AddInventory"
         tools:layout="@layout/fragment_new_agreement_add_inventory">
 
@@ -420,7 +422,7 @@
     </fragment>
 
     <fragment android:id="@+id/Notes"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Notes"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Notes"
         android:label="Notes"
         tools:layout="@layout/fragment_new_agreement_notes">
 
@@ -431,7 +433,7 @@
 
 
     <fragment android:id="@+id/Flight"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_FlightDetail"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_FlightDetail"
         android:label="Flight"
         tools:layout="@layout/fragment_new_agreement_flightdetail">
 
@@ -441,7 +443,7 @@
     </fragment>
 
     <fragment android:id="@+id/BillingInfo"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Billing"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Billing"
         android:label="BillingInfo"
         tools:layout="@layout/fragment_new_agreement_billing_info">
 
@@ -454,7 +456,7 @@
     </fragment>
 
     <fragment android:id="@+id/BillingDetail"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Detail"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Detail"
         android:label="BillingDetail"
         tools:layout="@layout/fragment_new_agreement_billing_detail">
 
@@ -463,7 +465,7 @@
     </fragment>
 
     <fragment android:id="@+id/Agreement_Confirmation"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Confirmation"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Confirmation"
         android:label="Agreement Confirmation"
         tools:layout="@layout/fragment_new_agreement_confirmation">
 
@@ -482,7 +484,7 @@
     </fragment>
 
     <fragment android:id="@+id/Payment"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Payment"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Payment"
         android:label="Agreement Payment"
         tools:layout="@layout/fragment_new_agreement_payment">
 
@@ -505,7 +507,7 @@
 
     <fragment
         android:id="@+id/CardsOnAccount"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_CreditCards_List_For_User"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_CreditCards_List_For_User"
         android:label="CardsOnAccount"
         tools:layout="@layout/fragment_creditcards_list">
         <action
@@ -519,7 +521,7 @@
 
     <fragment
         android:id="@+id/UpdateCreditCard"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Update_CreditCard_For_user"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Update_CreditCard_For_user"
         android:label="EditCreditCard"
         tools:layout="@layout/fragment_update_creditcard">
         <action
@@ -528,7 +530,7 @@
     </fragment>
 
     <fragment android:id="@+id/PaymentOffline"
-        android:name="com.rentguruz.app.home.Fragment_Payment_Offline"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Payment_Offline"
         android:label="Payment Success"
         tools:layout="@layout/fragment_payment_offline">
 
@@ -544,7 +546,7 @@
 
     <fragment
         android:id="@+id/AddCreditCard"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Add_credit_card_For_User"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Add_credit_card_For_User"
         android:label="AddCreditCard"
         tools:layout="@layout/fragment_add_creditcard">
         <action
@@ -554,7 +556,7 @@
 
 
     <fragment android:id="@+id/PaymentChangeOption"
-        android:name="com.rentguruz.app.home.Fragment_Change_Payment_Option"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Change_Payment_Option"
         android:label="Payment Change Option"
         tools:layout="@layout/fragment_change_payment_option">
 
@@ -570,7 +572,7 @@
     </fragment>
 
     <fragment android:id="@+id/PaymentSuccess"
-        android:name="com.rentguruz.app.home.Fragment_Payment_Success"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Payment_Success"
         android:label="Payment Success"
         tools:layout="@layout/fragment_payment_success">
 
@@ -590,7 +592,7 @@
     </fragment>
 
     <fragment android:id="@+id/Reservation_Summarry"
-        android:name="com.rentguruz.app.home.Fragment_Resevation_Summarry"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Resevation_Summarry"
         android:label="Reservation Summarry"
         tools:layout="@layout/fragment_vehicle_current_rental">
 
@@ -602,7 +604,7 @@
 
     <fragment
         android:id="@+id/Term_and_Condtion"
-        android:name="com.rentguruz.app.flexiicar.commonfragment.Fragment_Term_And_Condition"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.commonfragment.Fragment_Term_And_Condition"
         android:label="Term_and_Condtion"
         tools:layout="@layout/fragment_terms_and_conditions">
 
@@ -616,7 +618,7 @@
     //add agree
     <fragment
         android:id="@+id/Agreement"
-        android:name="com.rentguruz.app.home.agreement.Fragment_Agreement"
+        android:name="com.rentguruz.app.b2b.carclick.home.agreement.Fragment_Agreement"
         android:label="Agreement"
         tools:layout="@layout/fragment_agreement">
 
@@ -655,7 +657,7 @@
 
     <fragment
         android:id="@+id/SummaryOfChargesForAgreements"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Summary_Of_Charges_For_Agreements"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Summary_Of_Charges_For_Agreements"
         android:label="SummaryOfChargesForAgreements"
         tools:layout="@layout/fragment_summary_of_charges_for_agreements">
         <action
@@ -708,11 +710,34 @@
         <action android:id="@+id/action_summary_to_cancel_agreement"
             app:destination="@+id/cancel_agreement"/>
 
+        <action android:id="@+id/checkoutsucess"
+            app:destination="@+id/Checkout_success"/>
+
+        <action android:id="@+id/checkinsucess"
+            app:destination="@+id/CheckIn_success"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Checkout_success"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Checkout_Success"
+        android:label="Checkout Sucess"
+        tools:layout="@layout/fragment_vehicle_checkout_confirmation">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CheckIn_success"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_CheckIn_Success"
+        android:label="CheckIn Sucess"
+        tools:layout="@layout/fragment_vehicle_checkout_confirmation">
+
     </fragment>
 
     <fragment
         android:id="@+id/TermAndCondition"
-        android:name="com.rentguruz.app.flexiicar.commonfragment.Fragment_Term_And_Condition"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.commonfragment.Fragment_Term_And_Condition"
         android:label="TermAndCondition"
         tools:layout="@layout/fragment_terms_and_conditions">
 
@@ -722,7 +747,7 @@
 
     <fragment
         android:id="@+id/traffic_tic"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Agreement_Traffic_Ticket"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Agreement_Traffic_Ticket"
         android:label="Toll Charge"
         tools:layout="@layout/fragment_traffic_charge">
 
@@ -731,7 +756,7 @@
 
     <fragment
         android:id="@+id/cancel_agreement"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Agreement_Cancel"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Agreement_Cancel"
         android:label="Cancel Agreement"
         tools:layout="@layout/fragment_agreement_cancel">
 
@@ -739,14 +764,14 @@
 
     <fragment
         android:id="@+id/toll_charge"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Agreement_Toll_Charge"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Agreement_Toll_Charge"
         android:label="Toll Charge"
         tools:layout="@layout/fragment_toll_charge">
 
     </fragment>
 
     <fragment android:id="@+id/checklist"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Check_in"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Check_in"
         android:label="Check List"
         tools:layout="@layout/fragment_self_chekout">
 
@@ -760,7 +785,7 @@
 
     <fragment
         android:id="@+id/Self_check_in_extra"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Extra_Checklist"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Extra_Checklist"
         android:label="Extrea Equipment"
         tools:layout="@layout/fragment_extra_checklist">
 
@@ -775,7 +800,7 @@
 
     <fragment
         android:id="@+id/Self_check_Out"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Self_Check_out"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Self_Check_out"
         android:label="Self_check_Out"
         tools:layout="@layout/fragment_self_chekout">
         <action
@@ -795,7 +820,7 @@
     </fragment>
 
     <fragment android:id="@+id/Self_check_Out_Extra"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Extra_Checklist"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Extra_Checklist"
         android:label="Self_check_Out_Extra"
         tools:layout="@layout/fragment_extra_checklist">
 
@@ -807,7 +832,7 @@
 
     <fragment
         android:id="@+id/Vehicle_Image_1"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Vehicle_Image_1"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Vehicle_Image_1"
         android:label="Vehicle_Image_1"
         tools:layout="@layout/fragment_vehicle_images_1">
         <action
@@ -829,7 +854,7 @@
 
     <fragment
         android:id="@+id/Vehicle_Additional_image"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Vehicle_Additional_Image_All"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Vehicle_Additional_Image_All"
         android:label="Vehicle_Additional_image"
         tools:layout="@layout/fragment_vehicle_images_additional_all">
         <action
@@ -847,7 +872,7 @@
 
     <fragment
         android:id="@+id/Acceptance_signature"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Acceptance_singnature"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Acceptance_singnature"
         android:label="Acceptance_signature"
         tools:layout="@layout/fragment_acceptance_signature">
         <action
@@ -864,6 +889,9 @@
             android:id="@+id/action_Acceptance_signature_to_Agreements"
             app:destination="@+id/SummaryOfChargesForAgreements"/>
 
+        <action android:id="@+id/checkoutsuccess"
+            app:destination="@+id/Checkout_success"/>
+
 
         <action
             android:id="@+id/action_Acceptance_signature_to_Location_And_Key"
@@ -877,7 +905,7 @@
 
     <fragment
         android:id="@+id/Waiver_Signature"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Waiver_Signature"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Waiver_Signature"
         android:label="Waiver_Signature"
         tools:layout="@layout/fragment_waiver_signature">
         <action
@@ -892,7 +920,7 @@
     </fragment>
     <fragment
         android:id="@+id/Location_And_Key"
-        android:name="com.rentguruz.app.flexiicar.selfcheckout.Fragment_Location_And_Key"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckout.Fragment_Location_And_Key"
         android:label="Location_And_Key"
         tools:layout="@layout/fragment_location_and_key_2">
         <action
@@ -911,7 +939,7 @@
 
     <fragment
         android:id="@+id/LocationKey_ForSelfCheckOut"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Location_And_Key"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Location_And_Key"
         android:label="Location_And_Key"
         tools:layout="@layout/fragment_location_and_key_2">
         <action
@@ -927,7 +955,7 @@
 
     <fragment
         android:id="@+id/VehImage_SelfCheckIn_1"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Vehicle_Image_1"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Vehicle_Image_1"
         android:label="Vehicle_Image1_SelfCheckIn"
         tools:layout="@layout/fragment_vehicle_images_1">
         <action
@@ -952,7 +980,7 @@
 
     <fragment
         android:id="@+id/Vehicle_All_image_SelfCheckIn"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Vehicle_Additional_Image_All"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Vehicle_Additional_Image_All"
         android:label="Vehicle_Additional_image"
         tools:layout="@layout/fragment_vehicle_images_additional_all">
         <action
@@ -968,7 +996,7 @@
 
     <fragment
         android:id="@+id/Signature"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Acceptance_singnature"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Acceptance_singnature"
         android:label="Signature"
         tools:layout="@layout/fragment_acceptance_signature">
         <action
@@ -989,11 +1017,17 @@
         <action android:id="@+id/action_Signature_to_summary"
             app:destination="@+id/SummaryOfChargesForAgreements"/>
 
+        <action android:id="@+id/checkinsucess"
+            app:destination="@+id/CheckIn_success"/>
+
     </fragment>
+
+
+
 
     <!--<fragment
         android:id="@+id/Term_and_Condtion"
-        android:name="com.rentguruz.app.flexiicar.commonfragment.Fragment_Term_And_Condition"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.commonfragment.Fragment_Term_And_Condition"
         android:label="Term_and_Condtion"
         tools:layout="@layout/fragment_terms_and_conditions">
 
@@ -1002,7 +1036,7 @@
 
     <fragment
         android:id="@+id/Self_check_In"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Self_Check_In"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Self_Check_In"
         android:label="Self_check_In"
         tools:layout="@layout/fragment_self_checkin">
         <action
@@ -1021,7 +1055,7 @@
 
     <fragment
         android:id="@+id/SummaryOfChargeForSelfCheckIn"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Summary_Of_Charges_For_SelfCheckIn"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Summary_Of_Charges_For_SelfCheckIn"
         android:label="SummaryOfChargeForSelfCheckIn"
         tools:layout="@layout/fragment_summary_of_charges_for_selfcheckin">
         <action
@@ -1043,7 +1077,7 @@
 
     <fragment
         android:id="@+id/PaymentCheckOutSelfCheckIn"
-        android:name="com.rentguruz.app.flexiicar.selfcheckin.Fragment_Payment_CheckOut_For_User_SelfCheckIn"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.selfcheckin.Fragment_Payment_CheckOut_For_User_SelfCheckIn"
         android:label="PaymentCheckOutSelfCheckIn"
         tools:layout="@layout/fragment_payment_checkout_process">
         <action
@@ -1059,7 +1093,7 @@
 
     <fragment
         android:id="@+id/Payment_Success"
-        android:name="com.rentguruz.app.flexiicar.commonfragment.Fragment_Payment_checkout_Success"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.commonfragment.Fragment_Payment_checkout_Success"
         android:label="Payment_Success"
         tools:layout="@layout/fragment_payment_checkout_success">
         <action
@@ -1075,7 +1109,7 @@
 
     <fragment
         android:id="@+id/chnageAgeement"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Agreement_DateChange"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Agreement_DateChange"
         android:label="Change Date"
         tools:layout="@layout/fragment_agreement_datechange">
 
@@ -1087,7 +1121,7 @@
 
     <fragment
         android:id="@+id/chnageAgeementVehicle"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Agreement_VehicleChange"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Agreement_VehicleChange"
         android:label="Change Vehicle"
         tools:layout="@layout/fragment_agreement_vehiclechange">
         <action android:id="@+id/test"
@@ -1097,7 +1131,7 @@
 
     <fragment
         android:id="@+id/chnageAgeementextend"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Agreement_Extend"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Agreement_Extend"
         android:label="Agreement Extend"
         tools:layout="@layout/fragment_agreement_extend">
 
@@ -1106,7 +1140,7 @@
 
 
     <fragment android:id="@+id/Printpreview"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Print_Preview"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Print_Preview"
         android:label="Print Preview"
         tools:layout="@layout/fragment_print_preview">
 
@@ -1114,7 +1148,7 @@
     </fragment>
 
   <!--  <fragment android:id="@+id/Payment"
-        android:name="com.rentguruz.app.home.Fragment_New_Agreement_Payment"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_New_Agreement_Payment"
         android:label="Agreement Payment"
         tools:layout="@layout/fragment_new_agreement_payment">
 
@@ -1137,7 +1171,7 @@
 
     <fragment
         android:id="@+id/CardsOnAccount"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_CreditCards_List_For_User"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_CreditCards_List_For_User"
         android:label="CardsOnAccount"
         tools:layout="@layout/fragment_creditcards_list">
         <action
@@ -1150,7 +1184,7 @@
 
 
     <fragment android:id="@+id/PaymentOffline"
-        android:name="com.rentguruz.app.home.Fragment_Payment_Offline"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Payment_Offline"
         android:label="Payment Success"
         tools:layout="@layout/fragment_payment_offline">
 
@@ -1166,7 +1200,7 @@
 
     <fragment
         android:id="@+id/UpdateCreditCard"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Update_CreditCard_For_user"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Update_CreditCard_For_user"
         android:label="EditCreditCard"
         tools:layout="@layout/fragment_update_creditcard">
         <action
@@ -1176,7 +1210,7 @@
 
     <fragment
         android:id="@+id/AddCreditCard"
-        android:name="com.rentguruz.app.flexiicar.user.Fragment_Add_credit_card_For_User"
+        android:name="com.rentguruz.app.b2b.carclick.flexiicar.user.Fragment_Add_credit_card_For_User"
         android:label="AddCreditCard"
         tools:layout="@layout/fragment_add_creditcard">
         <action
@@ -1185,7 +1219,7 @@
     </fragment>
 
     <fragment android:id="@+id/PaymentChangeOption"
-        android:name="com.rentguruz.app.home.Fragment_Change_Payment_Option"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Change_Payment_Option"
         android:label="Payment Change Option"
         tools:layout="@layout/fragment_change_payment_option">
 
@@ -1201,7 +1235,7 @@
     </fragment>
 
     <fragment android:id="@+id/PaymentSuccess"
-        android:name="com.rentguruz.app.home.Fragment_Payment_Success"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Payment_Success"
         android:label="Payment Success"
         tools:layout="@layout/fragment_payment_success">
 
@@ -1220,7 +1254,7 @@
     </fragment>
 
     <fragment android:id="@+id/Reservation_Summarry"
-        android:name="com.rentguruz.app.home.Fragment_Resevation_Summarry"
+        android:name="com.rentguruz.app.b2b.carclick.home.Fragment_Resevation_Summarry"
         android:label="Reservation Summarry"
         tools:layout="@layout/fragment_vehicle_current_rental">
 

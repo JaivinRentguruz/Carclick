@@ -10,7 +10,7 @@
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -1065,7 +1065,7 @@
                                 android:textSize="@dimen/twelve"
                                 android:theme="@style/texttheme" />
 
-                            <com.rentguruz.app.base.ActionEditText
+                            <com.rentguruz.app.b2b.carclick.base.ActionEditText
                                 style="@style/edittext"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -1144,6 +1144,7 @@
                         <TextView
                             style="@style/shortbtn"
                             android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
+                            android:textColor="@{Color.parseColor(UiColor.primary)}"
                             android:text="@string/accept" />
                         <!-- <TextView android:theme="@style/texttheme"
                              android:layout_width="match_parent"

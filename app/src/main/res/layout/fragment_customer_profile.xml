@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
         <import type="android.graphics.Color"/>
         <import type="androidx.core.content.ContextCompat" />
 
         <variable
             name="UiColor"
-            type="com.rentguruz.app.model.display.ThemeColors" />
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
 
         <variable
             name="label"
-            type="com.rentguruz.app.model.response.CompanyLabel" />
+            type="com.rentguruz.app.b2b.carclick.model.response.CompanyLabel" />
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -220,7 +221,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="8"
                             android:text="Name"
-                            android:textColor="@color/topcolor"
+                            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                             android:singleLine="true"
                             android:minLines="1"
                             android:maxLines="1"
@@ -234,7 +235,7 @@
                             android:layout_weight="5"
                             android:layout_marginLeft="@dimen/_4sdp"
                             android:text=""
-                            android:textColor="@color/screen_bg_color"
+                            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                             android:visibility="gone"
                             android:textSize="@dimen/_13ssp"
                             android:theme="@style/texttheme" />
@@ -254,7 +255,8 @@
                               android:src="@drawable/ic_mail_icon" />
   -->
 
-                        <androidx.appcompat.widget.LinearLayoutCompat
+                        <LinearLayout
+                            android:id="@+id/esquare"
                             android:layout_width="@dimen/_13sdp"
                             android:layout_height="@dimen/_13sdp"
                             android:layout_marginTop="2dp"
@@ -267,10 +269,10 @@
                                 android:layout_marginTop="@dimen/_minus2sdp"
                                 android:gravity="center_horizontal|center_vertical"
                                 android:text="E"
-                                android:textColor="@color/emailmobile"
+                                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                 android:textSize="@dimen/_8ssp"  />
 
-                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/txt_EMailAdd"
@@ -278,7 +280,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:text="@string/email"
-                            android:textColor="@color/topcolor"
+                            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                             android:textSize="@dimen/_11ssp"
                             android:theme="@style/texttheme" />
                     </LinearLayout>
@@ -300,6 +302,7 @@
                             android:layout_width="@dimen/_13sdp"
                             android:layout_height="@dimen/_13sdp"
                             android:layout_marginTop="2dp"
+                            android:id="@+id/tsquare"
                             android:background="@drawable/curve_single_text22">
 
                             <androidx.appcompat.widget.AppCompatTextView
@@ -309,7 +312,7 @@
                                 android:layout_marginTop="@dimen/_minus2sdp"
                                 android:gravity="center_horizontal|center_vertical"
                                 android:text="T"
-                                android:textColor="@color/emailmobile"
+                                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                 android:textSize="@dimen/_8ssp"  />
 
                         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -319,7 +322,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="@dimen/_5sdp"
-                            android:textColor="@color/topcolor"
+                            android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                             android:textSize="@dimen/_11ssp"
                             android:text="@string/continue_as_guest"
                             android:theme="@style/texttheme" />
@@ -1140,7 +1143,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_call_icon_small" />
+                            android:background="@drawable/ic_call_icon_small"
+                            android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1148,7 +1152,7 @@
                             android:layout_marginLeft="@dimen/_4sdp"
                             android:text="Call"
                             android:textAllCaps="false"
-                            android:textColor="@color/themebackgroundtext"
+                            android:textColor="@{Color.parseColor(UiColor.primary)}"
                             android:textSize="14dp"
                             android:theme="@style/texttheme" />
                     </LinearLayout>
@@ -1174,8 +1178,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_mail_icon"
-                            app:tint="@color/white" />
+                            android:background="@drawable/ic_mail_icon"
+                            android:backgroundTint="@{Color.parseColor(UiColor.primary)}" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1183,6 +1187,7 @@
                             android:layout_marginLeft="4dp"
                             android:text="@string/email"
                             android:textAllCaps="false"
+                            android:textColor="@{Color.parseColor(UiColor.primary)}"
                             style="@style/btntext"
                             android:textSize="14dp"
                             android:theme="@style/texttheme" />
@@ -1209,8 +1214,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_image_12"
-                            app:tint="@color/white" />
+                            android:background="@drawable/ic_image_12"
+                            android:backgroundTint="@{Color.parseColor(UiColor.primary)}" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1218,6 +1223,7 @@
                             android:layout_marginLeft="4dp"
                             android:text="Text"
                             android:textAllCaps="false"
+                            android:textColor="@{Color.parseColor(UiColor.primary)}"
                             style="@style/btntext"
                             android:textSize="14dp"
                             android:theme="@style/texttheme" />
@@ -1243,7 +1249,8 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_image_12" />
+                            android:background="@drawable/ic_image_12"
+                            android:backgroundTint="@{Color.parseColor(UiColor.primary)}"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1251,7 +1258,7 @@
                             android:layout_marginLeft="4dp"
                             android:text="Chat"
                             android:textAllCaps="false"
-                            android:textColor="@color/themebackgroundtext"
+                            android:textColor="@{Color.parseColor(UiColor.primary)}"
                             android:textSize="14dp"
                             android:theme="@style/texttheme" />
                     </LinearLayout>
@@ -1416,5 +1423,6 @@
             </LinearLayout>
         </LinearLayout>-->
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

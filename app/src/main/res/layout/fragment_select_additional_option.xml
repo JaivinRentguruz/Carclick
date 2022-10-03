@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.graphics.Color"/>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="UiColor"
+            type="com.rentguruz.app.b2b.carclick.model.display.ThemeColors" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
     android:background="@color/selected_dot">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <include
+            android:id="@+id/header"
+            app:UiColor="@{UiColor}"
+            layout="@layout/row_header" />
+
+        <!--<LinearLayout
             android:id="@+id/editCreditCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +79,7 @@
                     android:theme="@style/texttheme" />
 
             </RelativeLayout>
-        </LinearLayout>
+        </LinearLayout>-->
 
 
 
@@ -71,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/process"
-            android:layout_below="@id/editCreditCard">
+            android:layout_below="@id/header">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -193,6 +209,7 @@
 
                     <include
                         android:id="@+id/pickup"
+                        app:UiColor="@{UiColor}"
                         layout="@layout/pickup_drop" />
                    <!-- <LinearLayout
                         android:layout_width="match_parent"
@@ -489,6 +506,7 @@
                          </RelativeLayout>-->
                         <include
                             android:id="@+id/customerDetails"
+                            app:UiColor="@{UiColor}"
                             layout="@layout/row_customerlist_2" />
                     </LinearLayout>
 
@@ -500,6 +518,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:layout_marginTop="8dp"
+                            android:backgroundTint="@{Color.parseColor(UiColor.secondary)}"
                             android:background="@color/selected_dot">
 
                             <TextView
@@ -509,7 +528,7 @@
                                 android:gravity="center"
 
                                 android:text="@string/customize_your_rental"
-                                android:textColor="@color/topcolor"
+                                android:textColor="@{Color.parseColor(UiColor.primaryfont)}"
                                 android:textSize="@dimen/fab_margin"
                                 android:theme="@style/texttheme" />
                         </LinearLayout>
@@ -1049,10 +1068,12 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:background="@color/bottommenucolor"
+            android:backgroundTint="@{Color.parseColor(UiColor.primary)}"
             android:weightSum="100">
 
             <include
                 android:id="@+id/btm"
+                app:UiColor="@{UiColor}"
                 layout="@layout/btm_charges"/>
 
         <!--    <LinearLayout
@@ -1157,3 +1178,4 @@
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
